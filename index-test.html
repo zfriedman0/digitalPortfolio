@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Mack Volvo trucks and servicing in the Texarkana area">
+    <meta name="keywords" content="trucks, texarkana, mack, volvo, service, parts, truck">
+    <meta name="author" content="Zach Friedman, Sid Sandefur">
+    <title>Mack Volvo Texarkana | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="./img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+            <a href="index.html"><img src="./img/logo.jpg"></a>
+            <!--<h1><span class="highlight">Mack Volvo</span> Texarkana</h1>-->
+        </div>
+            <nav>
+              <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="stock.html">Stock</a></li>
+                <li><a href="parts.html">Parts</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="w3-content w3-display-container">
+      		<img class="mySlides" src="./img/promo-1.jpg" style="width:100%;">
+      		<img class="mySlides" src="./img/promo-2.jpg" style="width:100%;">
+      		  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+      		       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      		       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+      	</div>
+
+      <script>
+      	var slideIndex = 1;
+      	showDivs(slideIndex);
+
+      	function plusDivs(n) {
+      	showDivs(slideIndex += n);
+      	}
+
+      	function showDivs(n) {
+      		var i;
+      		var x = document.getElementsByClassName("mySlides");
+
+      		if (n > x.length) {slideIndex = 1}
+      		if (n < 1) {slideIndex = x.length};
+      		for (i = 0; i < x.length; i++) {
+      			x[i].style.display = "none";
+      		}
+      		x[slideIndex-1].style.display = "block";
+      	}
+      </script>
+    </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="container">
+        <center><h1> 8001 N. State Line Ave.</h1>
+        <h1>Texarkana, TX 75504</h1></center>
+      </div>
+    </section>
+
+<!-- TO EDIT AN IMAGE, CHANGE THE PART OF THE FILE PATH AFTER "./img/"
+                  TO THE NEW IMAGE'S NAME. -->
+
+    <section id="box">
+      <div class="container">
+        <center><h3>We carry all major brands!</h3>
+
+        <div class="brands">
+          <img src="./img/cummins.jpg" alt="Cummins logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/allison.jpg" alt="Allison logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/eaton-2.png" alt="Eaton logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/volvo.png" alt="Volvo logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/mack.png" alt="Mack logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/dex.png" alt="Dex logo">
+        </div>
+
+        <div class="brands">
+          <img src="./img/roadchoice.png" alt="Road Choice logo">
+        </div></center>
+      </div>
+    </section>
+
+    <footer>
+      <p>Mack Volvo Texarkana, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>
